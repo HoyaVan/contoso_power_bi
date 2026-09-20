@@ -16,3 +16,9 @@ A dynamic, interactive data visualization report to track..
 
 ## ERD
 <img width="800" height="785" alt="contoso ERD" src="https://github.com/user-attachments/assets/42199a6b-1e63-4b62-8075-f92a2b9454ac" />
+
+## Tech Stack
+- Power Query (ETL)
+- DAX (calculated measures, dynamic visuals, and conditional logic)
+- Data Modeling (Star Schema)
+- Power BI Desktop
