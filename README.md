@@ -1,7 +1,7 @@
 # PowerBI Report (Contoso)
 
 # ERD
-<img width="700" height="500" alt="contoso ERD" src="https://github.com/user-attachments/assets/42199a6b-1e63-4b62-8075-f92a2b9454ac" />
+<img width="700" height="550" alt="contoso ERD" src="https://github.com/user-attachments/assets/42199a6b-1e63-4b62-8075-f92a2b9454ac" />
 
 # Preview
 <img width="600" height="450" alt="contoso 3" src="https://github.com/user-attachments/assets/e5015de4-cfcd-4961-b48b-93228f45ea25" />
