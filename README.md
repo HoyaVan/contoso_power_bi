@@ -1,4 +1,4 @@
-# Power BI Report (Contoso)
+## Power BI Report (Contoso)
 # Review & Details
 - https://github.com/user-attachments/assets/9ea4eea4-4cca-47bf-9ef3-e77a8eb16d66
 - https://youtu.be/qe_qzEFZusE
