@@ -1,0 +1,8 @@
+Discount Amount = 
+VAR OneCountry = HASONEVALUE('store'[CountryName])
+RETURN
+IF (
+    OneCountry,
+    SUMX ( VALUES('store'[CountryName]), [Discount Amount (Local)] ),
+    SUMX ( VALUES('store'[CountryName]), [Discount Amount (Foreign)] )
+)

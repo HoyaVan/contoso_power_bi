@@ -1,0 +1,8 @@
+COGS = 
+VAR OneCountry = HASONEVALUE('store'[CountryName])
+RETURN
+IF (
+    OneCountry,
+    SUMX ( VALUES('store'[CountryName]), [COGS (Local)] ),
+    SUMX ( VALUES('store'[CountryName]), [COGS (Foreign)] )
+)

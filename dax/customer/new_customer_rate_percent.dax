@@ -1,0 +1,2 @@
+New Customer Rate % = 
+DIVIDE ( [New Customers], [Total Customers] )

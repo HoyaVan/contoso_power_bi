@@ -1,0 +1,1 @@
+New Customers = 'Measure'[Total Customers] - 'Measure'[Returning Customer]

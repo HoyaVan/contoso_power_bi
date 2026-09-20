@@ -1,0 +1,6 @@
+Net Sales = 
+IF (
+    ISINSCOPE('store'[CountryName]),
+    [Net Sales (Local)],
+    [Net Sales (Foreign)]
+)

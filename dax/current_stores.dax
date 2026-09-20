@@ -1,0 +1,14 @@
+Current Stores = 
+VAR AsOfDate =
+    COALESCE( MAX('order date'[Date]), TODAY() )
+RETURN
+CALCULATE(
+    COUNTROWS('store'),
+    KEEPFILTERS(
+        FILTER(
+            'store',
+            'store'[OpenDate] <= AsOfDate
+            && ( ISBLANK('store'[CloseDate]) || 'store'[CloseDate] >= AsOfDate )
+        )
+    )
+)

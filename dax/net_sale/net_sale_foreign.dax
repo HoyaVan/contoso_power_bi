@@ -1,0 +1,28 @@
+Net Sales (Foreign) = 
+SUMX (
+    'fact Sales',
+    VAR LocalNet =
+        'fact Sales'[NetPrice] * 'fact Sales'[Quantity]
+
+    VAR FromCur =
+        LOOKUPVALUE(
+            'exchange currency rate'[FromCurrency],
+            'exchange currency rate'[CurrencyKey], 'fact Sales'[CurrencyKey],
+            'exchange currency rate'[Date],        'fact Sales'[OrderDate]
+        )
+
+    VAR RateToUSD =
+        LOOKUPVALUE(
+            'exchange currency rate'[ExchangeRate],
+            'exchange currency rate'[CurrencyKey], 'fact Sales'[CurrencyKey],
+            'exchange currency rate'[Date],        'fact Sales'[OrderDate],
+            'exchange currency rate'[ToCurrency],  "USD"
+        )
+
+    RETURN
+        IF (
+            FromCur <> "USD",
+            DIVIDE( LocalNet, COALESCE(RateToUSD, 1) ),   -- convert non-USD
+            LocalNet                                      -- USD stays as is
+        )
+)

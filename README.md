@@ -20,5 +20,5 @@ A dynamic, interactive data visualization report to track..
 ## Preview: Count by Customer
 <img width="800" height="457" alt="contoso 1" src="https://github.com/user-attachments/assets/d4f02e2e-020f-40a9-ab3a-81cddac66381" />
 
-## ERD
+## ERD "Star Schema"
 <img width="800" height="785" alt="contoso ERD" src="https://github.com/user-attachments/assets/42199a6b-1e63-4b62-8075-f92a2b9454ac" />

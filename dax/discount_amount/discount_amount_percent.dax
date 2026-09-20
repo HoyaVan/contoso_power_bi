@@ -1,0 +1,1 @@
+Discount Amount % = DIVIDE([Discount Amount], CALCULATE([Discount Amount], ALL('store'[CountryName])))

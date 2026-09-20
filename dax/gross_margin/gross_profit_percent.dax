@@ -1,0 +1,1 @@
+Gross Profit % = DIVIDE([Gross Profit], CALCULATE([Gross Profit], ALL('store'[CountryName])))

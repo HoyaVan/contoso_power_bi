@@ -1,0 +1,6 @@
+Avg Orders per Returner Index % = 
+VAR AvgOrder = [Avg Orders per Returner]
+VAR AllAvg =
+    CALCULATE ( [Avg Orders per Returner], ALLSELECTED('store'[CountryName]) )
+RETURN
+DIVIDE ( AvgOrder, AllAvg )

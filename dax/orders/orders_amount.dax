@@ -1,0 +1,1 @@
+Orders = DISTINCTCOUNT('fact sales'[OrderKey])

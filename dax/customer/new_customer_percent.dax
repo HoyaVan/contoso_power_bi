@@ -1,0 +1,5 @@
+New Customer % = 
+DIVIDE (
+    [New Customers],
+    CALCULATE ( [New Customers], ALL ( 'store'[CountryName] ) )
+)

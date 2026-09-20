@@ -1,0 +1,8 @@
+Gross Profit = 
+VAR OneCountry = HASONEVALUE('store'[CountryName])
+RETURN
+IF (
+    OneCountry,
+    SUMX ( VALUES('store'[CountryName]), [Gross Profit (Local)] ),
+    SUMX ( VALUES('store'[CountryName]), [Gross Profit (Foreign)] )
+)

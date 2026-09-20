@@ -1,0 +1,5 @@
+COGS (Local) = 
+SUMX(
+    'fact Sales',
+    'fact Sales'[UnitCost] * 'fact Sales'[Quantity]
+)

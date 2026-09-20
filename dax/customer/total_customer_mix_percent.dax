@@ -1,0 +1,5 @@
+Total Customer Mix % = 
+DIVIDE (
+    [Total Customers],
+    CALCULATE ( [Total Customers], ALL ( 'store'[CountryName] ) )
+)

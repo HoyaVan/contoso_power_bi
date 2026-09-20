@@ -1,0 +1,5 @@
+Discount Amount (Local) = 
+SUMX(
+    'fact Sales',
+    ( 'fact Sales'[UnitPrice] - 'fact Sales'[NetPrice] ) * 'fact Sales'[Quantity]
+)

@@ -1,0 +1,1 @@
+Net Sales % = DIVIDE([Net Sales], CALCULATE([Net Sales], ALL('store'[CountryName])))

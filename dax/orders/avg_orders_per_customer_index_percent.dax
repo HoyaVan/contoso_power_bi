@@ -1,0 +1,5 @@
+Avg Orders per Customer Index % = 
+VAR AvgOrders = [Avg Orders per Customer]
+VAR AllAvg =
+    CALCULATE ( [Avg Orders per Customer], ALL ( 'store'[CountryName] ) )
+RETURN DIVIDE ( AvgOrders, AllAvg )

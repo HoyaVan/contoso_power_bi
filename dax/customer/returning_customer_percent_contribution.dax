@@ -1,0 +1,6 @@
+COGS % (Contribution) = 
+DIVIDE(
+    [COGS],
+    CALCULATE([COGS], ALL('store'[CountryName])),
+    0
+)

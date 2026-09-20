@@ -1,0 +1,5 @@
+Net Sales (Local) = 
+SUMX (
+    'fact Sales',
+    'fact Sales'[NetPrice] * 'fact Sales'[Quantity]
+)

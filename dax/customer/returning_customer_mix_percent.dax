@@ -1,0 +1,5 @@
+Returning Customer Mix % = 
+DIVIDE (
+    [Returning Customer],
+    CALCULATE ( [Returning Customer], ALL ( 'store'[CountryName] ) )
+)

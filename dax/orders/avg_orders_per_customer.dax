@@ -1,0 +1,1 @@
+Avg Orders per Customer = DIVIDE ( [Orders], [Total Customers] )

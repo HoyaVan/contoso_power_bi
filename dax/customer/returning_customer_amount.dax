@@ -1,0 +1,13 @@
+Returning Customer = 
+VAR CurrentCustomerList =
+    VALUES ( 'fact sales'[CustomerKey] )
+VAR Returning =
+    FILTER (
+        CurrentCustomerList,
+        CALCULATE (
+            DISTINCTCOUNT ( 'fact sales'[OrderKey] ),
+            ALLEXCEPT ( 'fact sales', 'fact sales'[CustomerKey] )
+        ) > 1
+    )
+RETURN
+COUNTROWS ( Returning )

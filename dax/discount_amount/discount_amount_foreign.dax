@@ -1,0 +1,28 @@
+Discount Amount (Foreign) = 
+SUMX (
+    'fact Sales',
+    VAR LocalDisc =
+        ('fact Sales'[UnitPrice] - 'fact Sales'[NetPrice]) * 'fact Sales'[Quantity]
+
+    VAR FromCur =
+        LOOKUPVALUE(
+            'exchange currency rate'[FromCurrency],
+            'exchange currency rate'[CurrencyKey], 'fact Sales'[CurrencyKey],
+            'exchange currency rate'[Date],        'fact Sales'[OrderDate]
+        )
+
+    VAR RateToUSD =
+        LOOKUPVALUE(
+            'exchange currency rate'[ExchangeRate],
+            'exchange currency rate'[CurrencyKey], 'fact Sales'[CurrencyKey],
+            'exchange currency rate'[Date],        'fact Sales'[OrderDate],
+            'exchange currency rate'[ToCurrency],  "USD"
+        )
+
+    RETURN
+        IF (
+            FromCur <> "USD",
+            DIVIDE( LocalDisc, COALESCE( RateToUSD, 1 ) ),   -- convert non-USD
+            LocalDisc                                        -- USD → keep as-is
+        )
+)
