@@ -3,6 +3,7 @@
 # Preview
 - Count by Sale
 <img width="800" height="457" alt="contoso 2" src="https://github.com/user-attachments/assets/6ef50ed2-9696-434b-a6f5-9c371de7077a" />
+
 - Count by Customer
 <img width="800" height="457" alt="contoso 1" src="https://github.com/user-attachments/assets/d4f02e2e-020f-40a9-ab3a-81cddac66381" />
 
