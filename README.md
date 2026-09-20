@@ -1,5 +1,10 @@
 # Power BI Report (Contoso)
-## Review & Details
+A dynamic, interactive data visualization report to track..
+- Financial & Sales Performance
+- Customer Base & Order Volume
+- Brand Market Share
+
+## Demo Video
 - https://github.com/user-attachments/assets/9ea4eea4-4cca-47bf-9ef3-e77a8eb16d66
 - https://youtu.be/qe_qzEFZusE
 
