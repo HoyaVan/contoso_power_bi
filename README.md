@@ -1,3 +1,4 @@
+
 # Power BI Report (Contoso)
 A dynamic, interactive data visualization report to track..
 - Financial & Sales Performance
@@ -13,6 +14,9 @@ A dynamic, interactive data visualization report to track..
 ## Demo Video
 - https://github.com/user-attachments/assets/9ea4eea4-4cca-47bf-9ef3-e77a8eb16d66
 - https://youtu.be/qe_qzEFZusE
+
+## Preview: Interaction
+<img width="1284" height="730" alt="contoso_report_animation" src="https://github.com/user-attachments/assets/b3368109-22e3-4335-8337-2b22405b0bc1" />
 
 ## Preview: Count by Sale
 <img width="800" height="457" alt="contoso 2" src="https://github.com/user-attachments/assets/6ef50ed2-9696-434b-a6f5-9c371de7077a" />
