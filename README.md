@@ -8,5 +8,5 @@
 <img width="800" height="785" alt="contoso ERD" src="https://github.com/user-attachments/assets/42199a6b-1e63-4b62-8075-f92a2b9454ac" />
 
 # Review & Details
-Uploading Design report review.mp4…
 https://github.com/user-attachments/assets/9ea4eea4-4cca-47bf-9ef3-e77a8eb16d66
+https://youtu.be/qe_qzEFZusE
